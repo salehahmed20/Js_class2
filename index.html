@@ -9,69 +9,103 @@
 <body>
       
 <script>
-      var lineBreak = "<br>";
-      var rular = "<hr>";
-      // -------------------------------
-      document.write("Hello Designer");
-      document.write("<br>");
-      document.write("Hello Developer"+lineBreak);
-      document.write(rular);
-      // -------------------------------
-      var name = "Hussain";
-      var email = "jhf@gmail.com";
-      var loc = "Khulna";
-      
-      
-      document.write(name+lineBreak);
-      document.write(email+lineBreak);
-      document.write(loc+lineBreak);
+var newLine = "<br>";
+// --------------------------------------------
+if(10>6){
+      document.write("Assalamualaikum");      
+}
+      document.write(newLine);
+// --------------------------------------------
+var a = 20;
+var b = 15;
 
-      document.write(name+" "+email+" "+loc);
-      document.write(rular);
+if(a>b){
+      document.write("InsaAllah");        
+}
 
-      // -------------------------------
-      var number1 = 10;
-      var number2 = 20;
-      var total = number1*number2
-      document.write("num1+num2: "+(number1+number2));
-      document.write(lineBreak); 
-      document.write("num1*num2: "+total);
-      document.write(lineBreak);
-      // -------------------------------
-      var a = 10;
-      a++;
-      var b = 20;
-      b--;
-      document.write(a+b);
-      document.write(lineBreak);
-      // -------------------------------
+      document.write(newLine);
+// --------------------------------------------
 
-      a = 600;
-      b = 500;
-      c = 400;
-      document.write(a==b);
-      document.write(lineBreak);
-      document.write(b!=c);
-      document.write(rular);
+var name = "Hussain";
+if(name = "Hussain"){
+      document.write("Madina");        
+}
+      document.write(newLine);
+// --------------------------------------------
+var age = 20;
+if(age>=21){
+      document.write("Your age is more than 20"); 
+}else{
+      document.write("Hi buddy");
+}
+      document.write(newLine);
+// --------------------------------------------
+var age = 20;
+if(age>=21){
+      document.write("Your age is more than 20"); 
+}else if(age>=18){
+      document.write("You are green mango"); 
+}else if(age>=15){
+      document.write("You are thunder bolt"); 
+}else if(age>=12){
+      document.write("You are junior"); 
+}else {
+      document.write("You are young enough"); 
+}
 
-      document.write(a>b && c>c);
-      document.write(lineBreak);
-      document.write((a>b || c>c)+lineBreak);
-      // -------------------------------
+      document.write(newLine);
+      // --------------------------------
 
+      DaysOfWeek= new Date().getDay();
 
-      
+      switch (DaysOfWeek) {
+
+      case 0:
+      document.write("Today is Sunday");
+      break;
+
+      case 1:
+      document.write("Today is Monday");
+      break;
+
+      case 2:
+      document.write("Today is Tuesday");
+      break;
+
+      case 3:
+      document.write("Today is  Wednesday");
+      break;
+
+      case 4:
+      document.write("Today is Thursday");
+      break;
+
+      case 5:
+      document.write("Today is Friday");
+      break;
+
+      case 6:
+      document.write("Today is Saturday");
+      break;
+
+      default:
+      document.write("Error: Unable to determine the day");
+
+      }
+
+      // --------------------------------
+      document.write(newLine);
+
+      var a = "we";
+      if(isNaN(a)){
+            document.write("not a number");   
+      }else if(!isNaN(a)){
+            document.write("a number");
+      }else{
+            document.write("Who cares!");
+      }
+
 </script>
-      git init 
-      git add .
-      git commit -m "first commit" 
-      git branch -M main
-      git remote add origin https://github.com/salehahmed20/themezone_Js.git 
-      git push -u origin main
-
-
-      git add .
-      git comit -m "added h1"
-      git push
+      
 </body>
 </html>
